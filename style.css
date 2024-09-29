@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Fredoka", Arial, sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: url(./bg.jpg) no-repeat top/cover;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  color: white;
+  position: relative;
+  min-width: 550px;
+  width: 550px;
+  
+}
+main h3 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+main .controls {
+  display: flex;
+  width: 100%;
+  position: relative;
+  bottom: -2rem;
+}
+main .controls button {
+  flex: 1;
+  padding: 0.5rem 2rem;
+  border: none;
+  background: #f3ae84;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  bottom: -2rem;
+}
+main .controls button:hover {
+  background-color: #e96d9d;
+}
+main .controls button:focus {
+  box-shadow: none;
+}
+main .controls button:first-child {
+  border-top-left-radius: 10px;
+}
+
+main .controls button:last-child {
+  border-top-right-radius: 10px;
+}
+ 
+main h3 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+button:disabled{
+    background-color: aliceblue;
+}
